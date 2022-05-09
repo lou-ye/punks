@@ -4,7 +4,7 @@ const deploy = async () => {
     console.log("Deploying contract with the account:", deployer.address);
   
     const Punks = await ethers.getContractFactory("Punks");
-    const deployed = await Punks.deploy();
+    const deployed = await Punks.deploy(10000);
   
     console.log("Punks is deployed at:", deployed.address);
   };
